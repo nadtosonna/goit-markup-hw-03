@@ -30,16 +30,38 @@ body {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-inline-start: 0;
 }
 a {
   text-decoration: none;
   color: var(--header-text-color);
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+.container {
+  width: 1200px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .visually-hidden {
   position: fixed;
   transform: scale(0);
 }
 .logo {
+  margin: 24px 93px 25px auto;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -52,15 +74,38 @@ a {
 .logo .logo-white {
   color: var(--invert-text-color);
 }
+.navigation-main {
+  display: flex;
+  align-items: center;
+}
 .navigation-titles .link.current {
   color: var(--accent-color);
 }
 .navigation-titles {
+  display: flex;
+  margin-left: 0;
   font-weight: 500;
+}
+.navigation-titles .item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation-titles .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-titles .link:hover,
 .navigation-titles .link:focus {
   color: var(--accent-color);
+}
+.contacts-header {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin: auto;
+}
+.contacts-header .contacts + .contacts {
+  margin-left: 50px;
 }
 .contacts .link {
   color: var(--main-text-color);
@@ -73,8 +118,12 @@ a {
 .hero {
   background-color: var(--background-color);
   text-align: center;
+  width: 1200px;
 }
 .hero-header {
+  margin-bottom: 30px;
+  padding-top: 200px;
+
   color: var(--invert-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -83,30 +132,68 @@ a {
   text-transform: uppercase;
 }
 .hero-button {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  border: 1px solid var(--logo-black-text-color);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   background-color: var(--accent-color);
   color: var(--invert-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  border-radius: 4px;
   cursor: pointer;
 }
+.features {
+  display: flex;
+  margin-bottom: 94px;
+}
+
 .features-item {
   text-transform: uppercase;
   color: var(--header-text-color);
   font-size: 14px;
 }
+.work-examples {
+  display: flex;
+  justify-content: center;
+}
+.work-examples > .item:nth-child(2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
 .section-header {
+  margin-bottom: 50px;
+
   color: var(--header-text-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 .team {
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-size: 16px;
   color: var(--header-text-color);
+}
+.team-job {
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  color: var(--main-text-color);
 }
 .footer {
   background-color: var(--background-color);
@@ -123,6 +210,11 @@ a {
 }
 
 /* Стили для portfolio.html */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .portfolio-button {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
@@ -136,6 +228,11 @@ a {
 .portfolio-button:hover {
   color: var(--invert-text-color);
   background-color: var(--accent-color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .project-name {
   color: var(--header-text-color);

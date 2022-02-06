@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Студия</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,142 +13,152 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
-      <a class="logo" lang="en" href="./index.html">Web<span class="logo-black">Studio</span></a>
-      <nav>
-        <ul class="navigation-titles">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li class="contacts">
-          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        </li>
-        <li class="contacts">
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <div class="container">
+        <nav class="navigation-main">
+          <a class="logo" lang="en" href="./index.html"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <ul class="navigation-titles">
+            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+
+          <ul class="contacts-header">
+            <li class="contacts">
+              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            </li>
+            <li class="contacts">
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h1 class="visually-hidden">Портфолио</h1>
-      <section class="filter">
-        <ul>
-          <li><button type="button" class="portfolio-button">Все</button></li>
-          <li>
-            <button type="button" class="portfolio-button">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Маркетинг</button>
-          </li>
-        </ul>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-header">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="hero-button">Заказать услугу</button>
+        </div>
       </section>
-      <section class="projects">
-        <ul>
-          <li>
-            <img
-              src="./images/portfolio/technokryak.jpg"
-              alt="Экран ноутбука"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Технокряк</h3>
-            <p class="project-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/new-orlean.jpg"
-              alt="Баскетболисты"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Постер New Orlean vs Golden Star</h3>
-            <p class="project-description">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/seafood.jpg"
-              alt="Логотип рыбного ресторана"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Ресторан Seafood</h3>
-            <p class="project-description">Приложение</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/prime.jpg" alt="Наушники" width="370" height="294" />
-            <h3 class="project-name">Проект Prime</h3>
-            <p class="project-description">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/boxes.jpg" alt="Коробочки" width="370" height="294" />
-            <h3 class="project-name">Проект Boxes</h3>
-            <p class="project-description">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/inspiration.jpg"
-              alt="Монитор с темной темой"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Inspiration has no Borders</h3>
-            <p class="project-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/limited-edition.jpg"
-              alt="Разворот журнала"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Издание Limited Edition</h3>
-            <p class="project-description">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/portfolio/lab.jpg" alt="Бирка" width="370" height="294" />
-            <h3 class="project-name">Проект LAB</h3>
-            <p class="project-description">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/growing-business.jpg"
-              alt="Работа за компьютером"
-              width="370"
-              height="294"
-            />
-            <h3 class="project-name">Growing Business</h3>
-            <p class="project-description">Приложение</p>
-          </li>
-        </ul>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="features">
+            <li class="features-list">
+              <h3 class="features-item">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-item">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-item">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-item">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+
+          <h2 class="section-header">Чем мы занимаемся</h2>
+          <ul class="work-examples">
+            <li class="item">
+              <img src="./images/box-1.jpg" alt="Процесс написания кода" width="370" height="294" />
+            </li>
+            <li class="item">
+              <img
+                src="./images/box-2.jpg"
+                alt="Процесс дизайна мобильного приложения"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="./images/box-3.jpg"
+                alt="Матрица цветов на планшете"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-header">Наша команда</h2>
+          <ul class="team">
+            <li>
+              <img
+                src="./images/igor-demyanenko.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Игорь Демьяненко</h3>
+              <p class="team-job">Product Designer</p>
+            </li>
+            <li>
+              <img src="./images/olha-repina.jpg" alt="Ольга Репина" width="270" height="260" />
+              <h3 class="team-name">Ольга Репина</h3>
+              <p class="team-job">Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                src="./images/nikolay-tarasov.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Николай Тарасов</h3>
+              <p class="team-job">Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/mikhail-ermakov.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Михаил Ермаков</h3>
+              <p class="team-job">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="logo" lang="en" href="./index.html">Web<span class="logo-white">Studio</span></a>
-      <address class="address">
-        <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-        <a class="footer-contact" href="mailto:info@example.com">info@example.com</a>
-        <br />
-        <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
+      <div class="container">
+        <a class="logo" lang="en" href="./index.html">Web<span class="logo-white">Studio</span></a>
+        <address class="address">
+          <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
+          <a class="footer-contact" href="mailto:info@example.com">info@example.com</a>
+          <br />
+          <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
