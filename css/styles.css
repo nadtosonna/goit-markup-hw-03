@@ -311,8 +311,10 @@ header {
 }
 .project-text {
   padding: 20px 24px;
-  margin-top: -5px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+.projects-img {
+  display: block;
 }
