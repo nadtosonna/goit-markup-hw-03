@@ -15,7 +15,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <nav class="navigation-main">
           <a class="logo" lang="en" href="./index.html"
             >Web<span class="logo-black">Studio</span></a
@@ -33,37 +33,29 @@
             <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-
-          <ul class="contacts-header">
-            <li class="contacts">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-            </li>
-            <li class="contacts">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-            </li>
-          </ul>
         </nav>
+
+        <ul class="contacts-header">
+          <li class="contacts">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="contacts">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="visually-hidden">Портфолио</h1>
-        <section class="section">
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter">
             <li><button type="button" class="portfolio-button">Все</button></li>
-            <li>
-              <button type="button" class="portfolio-button">Веб-сайты</button>
-            </li>
-            <li>
-              <button type="button" class="portfolio-button">Приложения</button>
-            </li>
-            <li>
-              <button type="button" class="portfolio-button">Дизайн</button>
-            </li>
-            <li>
-              <button type="button" class="portfolio-button">Маркетинг</button>
-            </li>
+            <li><button type="button" class="portfolio-button">Веб-сайты</button></li>
+            <li><button type="button" class="portfolio-button">Приложения</button></li>
+            <li><button type="button" class="portfolio-button">Дизайн</button></li>
+            <li><button type="button" class="portfolio-button">Маркетинг</button></li>
           </ul>
 
           <ul class="projects">
@@ -161,17 +153,18 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <a class="logo" lang="en" href="./index.html">Web<span class="logo-white">Studio</span></a>
+        <a class="logo footer-logo" lang="en" href="./index.html"
+          >Web<span class="logo-white">Studio</span></a
+        >
         <address class="address">
           <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-          <a class="footer-contact" href="mailto:info@example.com">info@example.com</a>
-          <br />
+          <a class="footer-contact email" href="mailto:info@example.com">info@example.com</a>
           <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
       </div>
